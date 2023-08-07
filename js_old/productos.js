@@ -28,19 +28,6 @@ const bebida8 = new productos(8, "Gin", "Bombay", 1, 4500)
 
 let prods = [bebida, bebida1, bebida2, bebida3, bebida4, bebida5, bebida6, bebida7, bebida8]
 
-// Convertimos el array prods a una cadena JSON
-const prodsJSON = JSON.stringify(prods);
-
-// Guardamos la cadena JSON en el sessionStorage
-sessionStorage.setItem('productos', prodsJSON);
-
-// Recuperamos los datos del sessionStorage
-const productosJSON = sessionStorage.getItem('productos');
-
-// Convertimos la cadena JSON nuevamente a un array de objetos
-const prodsRecuperados = JSON.parse(productosJSON);
-
-
 let carrito = [];
 // Ahora prodsRecuperados contiene los productos guardados previamente en el sessionStorage
 console.table(prodsRecuperados);

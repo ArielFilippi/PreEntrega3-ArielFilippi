@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 const template = ({ id, producto, marca, precio, descripcion, imagen }) =>
 	`<div class="card" style="width: 18rem;">
 				<img class="prodc" src="${imagen}" alt="${producto} ${marca}">
