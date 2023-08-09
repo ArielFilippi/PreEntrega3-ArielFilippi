@@ -13,8 +13,9 @@ const template = ({ id, producto, marca, precio, descripcion, imagen }) =>
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item" id="0">$ ${precio}</li>
 				</ul>
-				<div class="card-body">
-					<button onclick="addToCart(${id})" class="btn"><img class="pequeña" src="./images/cart-shopping-solid.svg" alt="comprar"></button>
+				<div class="card-body d-flex justify-content-center">
+					<button onclick="removeToCart(${id})" class="btn btn-danger mx-2">Quitar</button>
+					<button onclick="addToCart(${id})" class="btn btn-success mx-2">Agregar</button>
 				</div>
 			</div>`
 
@@ -22,7 +23,6 @@ const template = ({ id, producto, marca, precio, descripcion, imagen }) =>
 const mostrarProductos = () => {
 
 	const container = document.querySelector('#productsContainer')
-
 	const result = prods.map(prod => template(prod))
 	container.innerHTML = result.join('')
 
