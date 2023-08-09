@@ -14,7 +14,7 @@ const template = ({ id, producto, marca, precio, descripcion, imagen }) =>
 					<li class="list-group-item" id="0">$ ${precio}</li>
 				</ul>
 				<div class="card-body">
-					<button onclick="addToCart(${id})" class="btn"><img class="pequeña" src="/images/cart-shopping-solid.svg" alt="comprar"></button>
+					<button onclick="addToCart(${id})" class="btn"><img class="pequeña" src="./images/cart-shopping-solid.svg" alt="comprar"></button>
 				</div>
 			</div>`
 

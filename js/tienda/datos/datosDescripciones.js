@@ -15,12 +15,12 @@ const descripciones = {
  * 
  */
 const imagenes = {
-	whisky: "/images/productos/Johnnie-walker-blue-label.png",
-	gin: "/images/productos/gin-beefeater.jpg",
-	gin2: "/images/productos/BEEFEATER PINK STRAWBERRY_700cc_1.jpg",
-	gin3: "/images/productos/bot-beefeater-24.jpg",
-	vodka: "/images/productos/absolut-mango.jpg",
-	vodka2: "/images/productos/absolut-vodka-vainilla-750ml.jpg",
-	vodka3: "images/productos/vodka.jpg",
-	gin4: "/images/productos/bombay.jpg",
+	whisky: "./images/productos/Johnnie-walker-blue-label.png",
+	gin: "./images/productos/gin-beefeater.jpg",
+	gin2: "./images/productos/BEEFEATER PINK STRAWBERRY_700cc_1.jpg",
+	gin3: "./images/productos/bot-beefeater-24.jpg",
+	vodka: "./images/productos/absolut-mango.jpg",
+	vodka2: "./images/productos/absolut-vodka-vainilla-750ml.jpg",
+	vodka3: "./images/productos/vodka.jpg",
+	gin4: "./images/productos/bombay.jpg",
 }
