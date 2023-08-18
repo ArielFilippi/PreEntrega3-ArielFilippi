@@ -1,4 +1,10 @@
-const addToCart = (id) => {
+
+/**
+ * Agrega los productos y los suma si ya se encuentran en el mismo
+ * @param {producto} id 
+ * @param {cantidad} qty 
+ */
+const addToCart = (id, qty) => {
 
 	const result = prods.find(prod => prod.id === id);
 
@@ -7,14 +13,18 @@ const addToCart = (id) => {
 		const existInCart = cart.some(item => item.id === id)
 
 		existInCart
-			? modifyProduct(id, 'add')
-			: addProduct(result)
+			? modifyProduct(id, qty, 'add')
+			: addProduct(result, qty)
 
 		updateCart()
 	}
 }
 
-
+/**
+ * resta del carrito los productos
+ * @param {producto} id 
+ * @returns 
+ */
 const removeToCart = (id) => {
 
 	const result = prods.find(prod => prod.id === id);
@@ -26,7 +36,7 @@ const removeToCart = (id) => {
 		if (!product) return
 
 		product.cantidad > 1
-			? modifyProduct(id, 'remove')
+			? modifyProduct(id, 1, 'remove')
 			: deleteProduct(id)
 
 		updateCart()

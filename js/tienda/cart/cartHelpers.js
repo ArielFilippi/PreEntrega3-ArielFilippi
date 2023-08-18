@@ -1,21 +1,21 @@
-const addProduct = (product) => {
-
+const addProduct = (product, qty) => {
 	delete product.stock
 	delete product.descripcion
+	product.cantidad = qty
 	const { precio, cantidad } = product
 	product.precioTotal = precio * cantidad;
 	cart = [...cart, product]
 }
 
 
-const modifyProduct = (id, action) => {
+const modifyProduct = (id, qty, action) => {
 
 	const index = cart.findIndex(item => item.id === id);
 
 	if (action === 'add')
-		cart[index].cantidad++;
+		cart[index].cantidad += qty;
 	if (action === 'remove')
-		cart[index].cantidad--;
+		cart[index].cantidad -= qty;
 
 	const { precio, cantidad } = cart[index]
 	cart[index].precioTotal = precio * cantidad;

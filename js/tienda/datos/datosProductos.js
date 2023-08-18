@@ -1,5 +1,5 @@
 /**
- * 
+ * constructor de productos
  */
 class Productos {
 
@@ -16,7 +16,7 @@ class Productos {
 }
 
 /**
- * 
+ * productos
  */
 const bebida = new Productos(0, "Whisky", "Jhony Walker", 10, 109117.75, imagenes.whisky, descripciones.whisky)
 const bebida1 = new Productos(1, "Gin", "Beefeater", 5, 2500, imagenes.gin, descripciones.gin)
@@ -30,7 +30,7 @@ const bebida7 = new Productos(7, "Gin", "Bombay", 1, 4500, imagenes.gin4, descri
 const { marca, imagen, stock, precio, producto } = bebida
 
 /**
- * 
+ * arrays de productos
  */
 let prods = [bebida, bebida1, bebida2, bebida3, bebida4, bebida5, bebida6, bebida7]
 
